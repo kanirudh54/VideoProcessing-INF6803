@@ -1,0 +1,5 @@
+http://en.wikipedia.org/wiki/Salience_(neuroscience)#Visual_saliency_modeling
+http://www.scholarpedia.org/article/Visual_salience
+http://www.klab.caltech.edu/~xhou/
+http://cbi.gatech.edu/salobj/
+http://groups.inf.ed.ac.uk/calvin/objectness/
