@@ -1,0 +1,139 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{achanta2009frequency}
+R.~Achanta, S.~Hemami, F.~Estrada, and S.~Susstrunk.
+\newblock Frequency-tuned salient region detection.
+\newblock In {\em CVPR}, pages 1597--1604. IEEE, 2009.
+
+\bibitem{alexe2012measuring}
+B.~Alexe, T.~Deselaers, and V.~Ferrari.
+\newblock Measuring the objectness of image windows.
+\newblock {\em TPAMI, IEEE}, pages 2189--2202, 2012.
+
+\bibitem{arbelaez2011contour}
+P.~Arbelaez, M.~Maire, C.~Fowlkes, and J.~Malik.
+\newblock Contour detection and hierarchical image segmentation.
+\newblock {\em TPAMI, IEEE}, 33(5):898--916, 2011.
+
+\bibitem{borji2012salient}
+A.~Borji, D.~N. Sihite, and L.~Itti.
+\newblock Salient object detection: A benchmark.
+\newblock In {\em ECCV}, pages 414--429. Springer, 2012.
+
+\bibitem{borji2013stands}
+A.~Borji, D.~N. Sihite, and L.~Itti.
+\newblock What stands out in a scene? a study of human explicit saliency
+  judgment.
+\newblock {\em Vision research}, 91:62--77, 2013.
+
+\bibitem{bruce2005saliency}
+N.~Bruce and J.~Tsotsos.
+\newblock Saliency based on information maximization.
+\newblock In {\em NIPS}, pages 155--162, 2005.
+
+\bibitem{carreira2010constrained}
+J.~Carreira and C.~Sminchisescu.
+\newblock Constrained parametric min-cuts for automatic object segmentation.
+\newblock In {\em CVPR}, pages 3241--3248. IEEE, 2010.
+
+\bibitem{cerf2008predicting}
+M.~Cerf, J.~Harel, W.~Einh{\"a}user, and C.~Koch.
+\newblock Predicting human gaze using low-level saliency combined with face
+  detection.
+\newblock {\em NIPS}, 20, 2008.
+
+\bibitem{cheng2011global}
+M.-M. Cheng, G.-X. Zhang, N.~J. Mitra, X.~Huang, and S.-M. Hu.
+\newblock Global contrast based salient region detection.
+\newblock In {\em CVPR}, pages 409--416. IEEE, 2011.
+
+\bibitem{BingObj2014}
+M.-M. Cheng, Z.~Zhang, W.-Y. Lin, and P.~H.~S. Torr.
+\newblock {BING}: Binarized normed gradients for objectness estimation at
+  300fps.
+\newblock In {\em IEEE CVPR}, 2014.
+
+\bibitem{endres2010category}
+I.~Endres and D.~Hoiem.
+\newblock Category independent object proposals.
+\newblock In {\em ECCV}, pages 575--588. Springer, 2010.
+
+\bibitem{pascal-voc-2010}
+M.~Everingham, L.~Van~Gool, C.~K.~I. Williams, J.~Winn, and A.~Zisserman.
+\newblock The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2010 {(VOC2010)}
+  {R}esults.
+
+\bibitem{garcia2012relationship}
+A.~Garcia-Diaz, V.~Lebor{\'a}n, X.~R. Fdez-Vidal, and X.~M. Pardo.
+\newblock On the relationship between optical variability, visual saliency, and
+  eye fixations: A computational approach.
+\newblock {\em Journal of Vision}, 12(6), 2012.
+
+\bibitem{harel2006graph}
+J.~Harel, C.~Koch, and P.~Perona.
+\newblock Graph-based visual saliency.
+\newblock In {\em NIPS}, pages 545--552, 2006.
+
+\bibitem{hou2012image}
+X.~Hou, J.~Harel, and C.~Koch.
+\newblock Image signature: Highlighting sparse salient regions.
+\newblock {\em TPAMI, IEEE}, 34(1):194--201, 2012.
+
+\bibitem{hou2008dynamic}
+X.~Hou and L.~Zhang.
+\newblock Dynamic visual attention: Searching for coding length increments.
+\newblock In {\em NIPS}, pages 681--688, 2008.
+
+\bibitem{itti1998model}
+L.~Itti, C.~Koch, and E.~Niebur.
+\newblock A model of saliency-based visual attention for rapid scene analysis.
+\newblock {\em TPAMI, IEEE}, 20(11):1254--1259, 1998.
+
+\bibitem{judd2009learning}
+T.~Judd, K.~Ehinger, F.~Durand, and A.~Torralba.
+\newblock Learning to predict where humans look.
+\newblock In {\em ICCV}, pages 2106--2113. IEEE, 2009.
+
+\bibitem{li2010object}
+F.~Li, J.~Carreira, and C.~Sminchisescu.
+\newblock Object recognition as ranking holistic figure-ground hypotheses.
+\newblock In {\em CVPR}, pages 1712--1719. IEEE, 2010.
+
+\bibitem{li2013visual}
+J.~Li, M.~D. Levine, X.~An, X.~Xu, and H.~He.
+\newblock Visual saliency based on scale-space analysis in the frequency
+  domain.
+\newblock {\em TPAMI, IEEE}, 2013.
+
+\bibitem{liu2007learning}
+T.~Liu, J.~Sun, N.-N. Zheng, X.~Tang, and H.-Y. Shum.
+\newblock Learning to detect a salient object.
+\newblock In {\em CVPR}, 2007.
+
+\bibitem{margolin2013makes}
+R.~Margolin, A.~Tal, and L.~Zelnik-Manor.
+\newblock What makes a patch distinct?
+\newblock In {\em CVPR}. IEEE, 2013.
+
+\bibitem{perazzi2012saliency}
+F.~Perazzi, P.~Krahenbuhl, Y.~Pritch, and A.~Hornung.
+\newblock Saliency filters: Contrast based filtering for salient region
+  detection.
+\newblock In {\em CVPR}, pages 733--740. IEEE, 2012.
+
+\bibitem{tatler2005visual}
+B.~W. Tatler, R.~J. Baddeley, and I.~D. Gilchrist.
+\newblock Visual correlates of fixation selection: Effects of scale and time.
+\newblock {\em Vision research}, 45(5):643--659, 2005.
+
+\bibitem{torralba2011unbiased}
+A.~Torralba and A.~A. Efros.
+\newblock Unbiased look at dataset bias.
+\newblock In {\em CVPR}, pages 1521--1528. IEEE, 2011.
+
+\bibitem{zhang2008sun}
+L.~Zhang, M.~H. Tong, T.~K. Marks, H.~Shan, and G.~W. Cottrell.
+\newblock Sun: A bayesian framework for saliency using natural statistics.
+\newblock {\em Journal of Vision}, 8(7), 2008.
+
+\end{thebibliography}

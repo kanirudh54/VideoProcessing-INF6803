@@ -1,0 +1,16 @@
+Bottom-up visual saliency refers to the ability to select important visual information for further processing.  The mechanism has proven to be useful for human as well as computer vision.  Unlike other topics such as object detection/recognition, saliency is not a well-defined term.  Most of the works in computer vision focus on one of the following two specific tasks of saliency: fixation prediction and salient object segmentation.
+
+In a fixation experiment, saliency is expressed as eye gaze.  Subjects are asked to view each image for seconds while their eye fixations are recorded.  The goal of an algorithm is to compute a probabilistic map of an image to predict the actual human eye gaze patterns.  Alternatively, in a salient object segmentation dataset, image labelers annotate an image by drawing pixel-accurate silhouettes of objects that are believed to be salient.  Then the algorithm is asked to generate a map that matches the annotated salient object mask.
+
+Various datasets of fixation and salient object segmentation have provided objective ways to analyze algorithms.  However, existing methodology suffers from two major limitations:  1) algorithms focusing on one type of saliency tend to overlook the connection to the other side.  2) Benchmarking primarily on one dataset tend to overfit the inherent bias of that dataset.
+
+
+In this paper, we explore the connection between fixation prediction and salient object segmentation by augmenting 850 existing images from PASCAL 2010 \cite{pascal-voc-2010} dataset with eye fixations, and salient object segmentation labeling.  In Sec.~\ref{sec:dataset} we argue that by making the image acquisition and image annotation \emph{independent} to each other, we can avoid \emph{dataset design bias} -- a specific type of bias that is caused by experimenters' unnatural selection of dataset images.
+
+
+
+With fixations and salient object labels simultaneously presented in the same set of images, we report a series of interesting findings.  First, we show that salient object segmentation is a valid problem because of the high consistency among labelers.  Second, unlike fixation datasets, the most widely used salient object segmentation dataset is heavily biased.  As a result, all top performing algorithms for salient object segmentation have poor generalization power when they are tested on more realistic images. Finally, we demonstrate that there exists a strong correlation between fixations and salient objects.
+
+
+
+Inspired by these discoveries, in Sec.~\ref{sec:model} we propose a new model of salient object segmentation. By combining existing fixation-based saliency models with segmentation techniques, our model bridges the gap between fixation prediction and salient object segmentation.  Despite its simplicity, this model significantly outperforms state-of-the-arts salient object segmentation algorithms on all 3 salient object datasets.

@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% This template produces a cover page for a CBMM memo.
+% It is Adapted  from book title page template from its
+% Original author: Peter Wilson (herries.press@earthlink.net)
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+% Instructions for using this template:
+% This title page compiles as is. If you wish to include this title page in
+% another document, you will need to copy everything before
+% \begin{document} into the preamble of your document. The title page is
+% then included using \titleAT within your document.
+%You have to define memo number, memo date, memo title, memo authors and memo abstract, in the document.
+%CBMM
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+%%%% PACKAGES, %%%%%
+
+\usepackage[svgnames]{xcolor} % Required to specify font color
+\usepackage{graphicx}
+\usepackage[margin= 0.8in]{geometry}
+%\usepackage{times}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{slashbox}
+\usepackage{hyperref}
+
+
+%%%%
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\titleAT}{\begingroup % Create the command for including the title page in the document
+\newlength{\drop} % Command for generating a specific amount of whitespace
+\drop=0.05\textheight % Define the command as 10% of the total text height
+
+\includegraphics[scale=1.5]{Horizontal_Full-crop.pdf}
+
+\textcolor{CornflowerBlue}{\rule{\textwidth}{3 pt}}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+
+\vspace{\drop} % Whitespace between the top lines and title
+\textbf{\textsf{\large{CBMM Memo No. \memonumber}}}\quad \quad \quad\quad \quad \quad \quad\quad\quad \quad\quad\quad      \textbf{\large{\memodate}}
+
+\vspace{\drop}
+\begin{center}
+\textbf{\textsf{\huge{\memotitle}}}\\
+\vspace{0.4\drop}
+\textbf{\Large{\textsf{by}}}\\
+\vspace{0.4\drop}
+\textbf{\textsf{\large{\memoauthors}}}
+\end{center}
+\vspace{\drop}
+\textbf{\textsf{\large{\noindent Abstract}:}} {\memoabstract}
+
+\textcolor{CornflowerBlue}{\rule{\textwidth}{3 pt}}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par
+
+\begin{minipage}{.15\linewidth}
+\includegraphics[scale=0.1]{nsf1.pdf}
+\end{minipage}
+\begin{minipage}{.84\linewidth}
+\textbf{\textsf{\\
+\\
+The research was supported by the ONR via an award made through Johns Hopkins University, by the G. Harold and Leila Y. Mathers Charitable Foundation, by ONR N00014-12-1-0883 and the Center for Minds, Brains and Machines (CBMM), funded by NSF STC award CCF-1231216. This research was also supported by NSF Expeidtion award 1029679, ARO MURI award 58144-NS-MUR, and Intel Science and Technology Center in Pervasive Computing.}}
+\end{minipage}
+\endgroup}
+
+%----------------------------------------------------------------------------------------
+%	BLANK DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbers
+
+\def\eg{\textsf{\it e.g.}}
+\def\ie{\textsf{\it i.e.}}
+
+\def\memonumber{ \textsf{014}} %insert the memo number here
+\def\memodate{\textsf{\today}} % insert the publication date here
+\def\memotitle{\textsf{The Secrets of Salient Object Segmentation}} %insert the memo title here
+\def\memoauthors{\textsf{Yin Li$^{1*}$, Xiaodi Hou$^{2*}$\let\thefootnote\relax\footnote{* These authors contribute equally.}, Christof Koch$^{3}$, James M. Rehg$^{1}$, Alan L. Yuille$^{4}$ }\\
+$^{1}$Gerogia Institute of Technology~~
+$^{2}$California Institute of Technology \\
+$^{3}$Allen Institute for Brain Science ~~
+$^{4}$University of California, Los Angeles\\
+{\tt\small yli440@gatech.edu~xiaodi.hou@gmail.com~christofk@alleninstitute.org~rehg@cc.gatech.edu~yuille@stat.ucla.edu}}%insert authors names
+
+\def\memoabstract{\textsf{In this paper we provide an extensive evaluation of fixation prediction and salient object segmentation algorithms as well as statistics of major datasets. Our analysis identifies serious design flaws of existing salient object benchmarks, called the \emph{dataset design bias}, by over emphasising the stereotypical concepts of saliency. The dataset design bias does not only create the discomforting disconnection between fixations and salient object segmentation, but also misleads the algorithm designing.
+Based on our analysis, we propose a new high quality dataset that offers both fixation and salient object segmentation ground-truth. With fixations and salient object being presented simultaneously,  we are able to bridge the gap between fixations and salient objects, and propose a novel method for salient object segmentation. Finally, we report significant benchmark progress on three existing datasets of segmenting salient objects. \\
+}}% insert the abstract
+
+\titleAT % This command includes the title page
+\clearpage
+
+\section{Introduction}
+\input{intro.tex}
+\section{Related Works}\label{sec:relatedWorks}
+\input{relatedworks.tex}
+\section{Dataset Analysis}\label{sec:dataset}
+\input{dataset.tex}
+\section{From Fixations to Salient Object Detection}\label{sec:model}
+\input{fixvsobj2.tex}
+\section{Conclusion}
+\input{discussion.tex}
+
+{
+\bibliographystyle{ieee}
+\bibliography{egbibShort}
+}
+
+
+
+\end{document}
